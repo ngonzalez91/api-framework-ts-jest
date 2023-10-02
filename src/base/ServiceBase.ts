@@ -17,8 +17,8 @@ export class ServiceBase {
     const response: Response<SessionResponse> = await this.api.client.post(
       this.api.baseUrl + '/auth',
       {
-        username: 'admin',
-        password: 'password123'
+        username: process.env.LOGIN_USERNAME,
+        password: process.env.LOGIN_PASSWORD
       }
     )
     this.defaultConfig = {

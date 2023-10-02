@@ -25,6 +25,10 @@ This project uses the restful-booker public API (https://restful-booker.herokuap
 - you would do with a Page Object model but instead of a page it encapsulates a set of actions/endpoints.
 - **tests**: The actual test cases
 
+## Before executing tests
+
+Rename the file "example.env" to ".env", and update the keys within.
+
 ## To execute the suites
 
 To run a rapid smoke test

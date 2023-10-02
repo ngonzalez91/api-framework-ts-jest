@@ -6,6 +6,8 @@
     "scripts": {
         "lint": "npx eslint",
         "test": "npx eslint && jest --runInBand",
+        "test:deleteBooking": "npx eslint && jest -t=DeleteBooking --runInBand",
+        "test:addBooking": "npx eslint && jest -t=AddBooking --runInBand",
         "test:smoke": "npx eslint && jest -t=Smoke --runInBand",
         "test:regression": "npx eslint && jest -t=@Regression --runInBand",
         "prettier:fix": "prettier --write ."
